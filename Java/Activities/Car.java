@@ -1,31 +1,27 @@
-package activity1;
+package activities;
+
 
 public class Car {
-	
-	public String color;
-    public String transmission;
-    public int make;
-    public int tyres;
-    public int doors;
 
-    
-    public Car(String color, String transmission, int make) {
-        this.color = color;
-        this.transmission = transmission;
-        this.make = make;
+    String color;
+    String transmission;
+    int make;
+    int tyres;
+    int doors;
+
+    // Constructor to set default values
+    public Car() {
         this.tyres = 4;
         this.doors = 4;
     }
 
-    
+    // Method to show all characteristics
     public void displayCharacteristics() {
-        System.out.println(" Car Characteristics");
-        System.out.println("Color: " + this.color);
-        System.out.println("Transmission: " + this.transmission);
-        System.out.println("Make Year: " + this.make);
-        System.out.println("Number of Tyres: " + this.tyres);
-        System.out.println("Number of Doors: " + this.doors);
-        System.out.println("---------------------------");
+        System.out.println("Car Make: " + make);
+        System.out.println("Car Color: " + color);
+        System.out.println("Transmission: " + transmission);
+        System.out.println("Tyres: " + tyres);
+        System.out.println("Doors: " + doors);
     }
 
     public void accelerate() {
@@ -35,5 +31,4 @@ public class Car {
     public void brake() {
         System.out.println("Car has stopped.");
     }
-
 }
